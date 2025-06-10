@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Retail-Supply-Chain-Financing'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.invoice-financing]
+path = 'contracts/invoice-financing.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.payment-processing]
+path = 'contracts/payment-processing.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
